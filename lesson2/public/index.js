@@ -7,6 +7,5 @@ for(var i = 0; i < btn.length; i++) {
     btn[i].onclick = function () {
 
         input.value += this.innerText;
-
     };
-}
+};
