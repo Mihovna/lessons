@@ -1,26 +1,11 @@
-/*var divide = function (a,b) {
-    if (b===0) {
-        return 'нельзя делить на ноль';
-    }
-    return a/b;
-};
-alert (divide(14,2));*/
+var input = document.querySelector('input');
 
-var action = function (a,b,act) {
-    if(act==='+') {
-        return a+b;
-    }
-    if(act==='-') {
-        return a-b;
-    }
-    if(act==='*') {
-        return a*b;
-    }
-    if(act==='/') {
-        if(b===0) {
-            return 'нельзя делить на ноль';
-        }
-        return a/b;
-    }
-    return 'выберите знак'
+var btn = document.querySelectorAll('button');
+
+for(var i = 0; i < btn.length; i++) {
+    btn[i].onclick = function () {
+
+        input.value += this.innerText;
+
+    };
 };
