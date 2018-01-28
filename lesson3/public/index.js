@@ -1,11 +1,8 @@
-var input = document.querySelector('input');
-
-var btn = document.querySelectorAll('button');
-var action;
-
-for(var i = 0; i < btn.length; i++) {
-    btn[i].onclick = function () {
-
-        input.value += this.innerText;
-    };
+var imyaFunkcii = function (vvodimoeZnachenie) {
+    var vremenaGoda = ['зима','весна','лето','осень'];
+    if (vremenaGoda.indexOf(vvodimoeZnachenie)=== -1) {
+        return false;
+    }
+    return true;
 };
+alert(imyaFunkcii('зиа'))
