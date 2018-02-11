@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    position: relative;
+}
+.main {
+
+}
+.main .btn {
+
+}
+.hidden {
+    display: none;
+}
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.modal-container .layer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+.modal-container .window {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid red;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+.modal-container .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("images/close.png") no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
